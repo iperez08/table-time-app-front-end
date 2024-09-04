@@ -1,9 +1,13 @@
 .navbar {
-    flex-shrink: 0;
-    height: 10%;
-    background-color: #333;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  flex-shrink: 0;
+  height: 10%;
+  background-color: #8B7C3B;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sign-up {
+  font-size: 50px;
+}
