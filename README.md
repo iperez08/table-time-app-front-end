@@ -1,6 +1,6 @@
 # TABLE-TIME-APP
 
-### Deployed Front-End:
+### Deployed Front-End: https://table-time-app-front-end-git-features-fixcss-eric-du-s-projects.vercel.app/
 
 ### Deployed Back-End: https://aqueous-mountain-56414-fa342b1c8a93.herokuapp.com
 
@@ -18,9 +18,14 @@ The Table-Time-App is a MERN stack application designed to simplify the process 
 
 ## WireFrames
 
+![Landing Page](./src/assets/Images/landingPage.png )
+![Customer Dashboard](./src/assets/Images/CustomerDash.png)
+![Sign In Page](./src/assets/Images/SignInPage.png)
+![Reservation Page](./src/assets/Images/ReservationPge.png)
+![Team Page](./src/assets/Images/TeamPage.png)
 
 ## Component Hierachy
-![Hierachy-Diagram](./src/assets/ReadMe-Imgs/Screenshot%202024-09-03%20at%2011.57.44 AM.png)
+![Hierachy-Diagram](./src/assets/Images/Hierachy.png)
 
 
 
