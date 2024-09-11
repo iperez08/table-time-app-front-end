@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import '../../../src/admin.css';
 
 const SignUp = () => {
     const navigate = useNavigate();
@@ -56,79 +57,75 @@ const SignUp = () => {
 
     return (
         <>
-            <section id="title">
+            <section className="signUp-title">
                 <h1>Table Time</h1>
             </section>
 
-            <section id="signUp-Welcome">
+            <section className="signUp-Welcome">
                 <h1>New Admin Registration System</h1>
             </section>
 
             {error && <p style={{ color: 'red' }}>{error}</p>}
 
-            <section id="signUp-functions">
-            <form onSubmit={handleSignUp}>
-                <div>
-                    <label>Username:</label>
-                    <input
-                        type="text"
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
-                        required
-                    />
-                </div>
-                <div>
-                    <label>Work Email:</label>
-                    <input
-                        type="email"
-                        value={workEmail}
-                        onChange={(e) => setWorkEmail(e.target.value)}
-                        required
-                    />
-                </div>
-                <div>
-                    <label>Password:</label>
-                    <input
-                        type="password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        required
-                    />
-                </div>
-                <div>
-                    <label>Confirm Password:</label>
-                    <input
-                        type="password"
-                        value={confirmPassword}
-                        onChange={(e) => setConfirmPassword(e.target.value)}
-                        required
-                    />
-                </div>
-                <div>
-                    <label>Initiation Code:</label>
-                    <input
-                        type="text"
-                        value={initiationCode}
-                        onChange={(e) => setInitiationCode(e.target.value)}
-                        required
-                    />
-                </div>
-                
-               
-            </form>
+            <section className="signUp-functions">
+                <form onSubmit={handleSignUp}>
+                    <div>
+                        <label>Username:</label>
+                        <input
+                            type="text"
+                            value={username}
+                            onChange={(e) => setUsername(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label>Work Email:</label>
+                        <input
+                            type="email"
+                            value={workEmail}
+                            onChange={(e) => setWorkEmail(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label>Password:</label>
+                        <input
+                            type="password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label>Confirm Password:</label>
+                        <input
+                            type="password"
+                            value={confirmPassword}
+                            onChange={(e) => setConfirmPassword(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label>Initiation Code:</label>
+                        <input
+                            type="text"
+                            value={initiationCode}
+                            onChange={(e) => setInitiationCode(e.target.value)}
+                            required
+                        />
+                    </div>
+
+                    <section className="signUpButton">
+                        <button type="submit" className="sign-up-button">Sign Up</button>
+                    </section>
+                </form>
             </section>
 
-            <section id="signUpButton">
-            <button type="submit" className="sign-up-button">Sign Up</button>
-            </section>
-
-            <section id="backButton">
-                
+            <section className="signUp-backButton">
                 <button onClick={handleBackClick} className="back-button">
                     Back
                 </button>
             </section>
-            
         </>
     );
 };
